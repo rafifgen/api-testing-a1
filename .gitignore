@@ -1,0 +1,13 @@
+# Postman Environment files (often contain sensitive API keys/secrets)
+*.postman_environment.json
+
+# Postman Globals (often contain sensitive data)
+*.postman_globals.json
+
+# Postman backup and auto-save files
+*.postman_dump.json
+*.postman_backup
+
+# Newman (Postman CLI) reports and artifacts
+/node_modules
+/newman/
