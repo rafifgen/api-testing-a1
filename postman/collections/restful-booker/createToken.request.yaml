@@ -1,0 +1,14 @@
+$kind: http-request
+name: createToken
+url: https://restful-booker.herokuapp.com/auth
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"admin\",\r
+
+    \    \"password\": \"password123\"\r
+
+    }"
+order: 3928900697620115
