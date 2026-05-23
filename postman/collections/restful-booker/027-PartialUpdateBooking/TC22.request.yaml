@@ -1,0 +1,22 @@
+$kind: http-request
+name: TC22
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"bookingdates\": {\r
+
+    \      \"checkin\": \"9999-12-31\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC22.resources/examples
+order: 23000

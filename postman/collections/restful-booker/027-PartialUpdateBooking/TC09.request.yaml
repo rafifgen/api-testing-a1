@@ -1,0 +1,32 @@
+$kind: http-request
+name: TC09
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\": \"John\",\r
+
+    \    \"lastname\": \"Doe\",\r
+
+    \    \"depositpaid\": true,\r
+
+    \    \"bookingdates\": {\r
+
+    \      \"checkin\": \"2018-01-01\",\r
+
+    \      \"checkout\": \"2019-01-01\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\": \"Breakfast\"\r
+
+    \  }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC09.resources/examples
+order: 10000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"additionalneeds\" : \"handuk lebihin 1\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC24.resources/examples
+order: 25000

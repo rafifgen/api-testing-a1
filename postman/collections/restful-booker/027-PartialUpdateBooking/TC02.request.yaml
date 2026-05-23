@@ -1,0 +1,14 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/2
+method: PATCH
+headers:
+  Cookie: token=dde17d60d9a0517
+body:
+  type: json
+  content: "{\r
+
+    \    \"totalprice\" : 2000000\r
+
+    }"
+examples: .resources/TC02.resources/examples
+order: 2000

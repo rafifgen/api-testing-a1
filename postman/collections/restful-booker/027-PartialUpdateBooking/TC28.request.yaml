@@ -1,0 +1,18 @@
+$kind: http-request
+name: TC28
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"totalprice\" : seratus\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC28.resources/examples
+order: 4502700598954538

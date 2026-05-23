@@ -1,0 +1,14 @@
+$kind: http-request
+name: TC18
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"depositpaid\": true\r\n}"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC18.resources/examples
+order: 18000

@@ -1,0 +1,13 @@
+$kind: http-request
+name: TC25
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+headers:
+  Cookie: token=123
+body:
+  type: json
+  content: "{\r\n    \"firstname\" : \"Foo\"\r\n}"
+auth:
+  type: noauth
+examples: .resources/TC25.resources/examples
+order: 27000

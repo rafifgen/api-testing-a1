@@ -1,0 +1,20 @@
+$kind: http-request
+name: TC15
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\": 123,\r
+
+    \    \"lastname\": !!!!!\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC15.resources/examples
+order: 16000
