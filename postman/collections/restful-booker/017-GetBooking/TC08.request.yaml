@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/1
+method: GET
+headers:
+  Accept: application/xml
+examples: .resources/TC08.resources/examples
+order: 11147

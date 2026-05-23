@@ -1,0 +1,16 @@
+$kind: http-request
+name: Pre-TC04
+url: https://restful-booker.herokuapp.com/booking/:id
+method: PATCH
+headers:
+  Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+pathVariables:
+  id: "4"
+body:
+  type: json
+  content: "{\r
+
+    \    \"additionalneeds\": \"Needs TC04\"\r
+
+    }"
+order: 3056

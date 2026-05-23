@@ -1,0 +1,33 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/99999
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"James\",\r
+
+    \    \"lastname\" : \"Brown\",\r
+
+    \    \"totalprice\" : 111,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2018-01-01\",\r
+
+    \        \"checkout\" : \"2019-01-01\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Breakfast\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC05.resources/examples
+order: 5000

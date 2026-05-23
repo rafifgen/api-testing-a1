@@ -1,0 +1,13 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/2
+method: PUT
+body:
+  type: json
+  content: "{}"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC23.resources/examples
+order: 4502647457667392

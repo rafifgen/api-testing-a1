@@ -1,0 +1,6 @@
+$kind: http-request
+name: TC01
+url: https://restful-booker.herokuapp.com/booking/99999
+method: GET
+examples: .resources/TC01.resources/examples
+order: 1000
