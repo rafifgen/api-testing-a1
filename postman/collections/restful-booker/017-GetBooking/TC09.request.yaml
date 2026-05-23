@@ -1,5 +1,11 @@
 $kind: http-request
 name: TC09
+description: |-
+  **Deskripsi:**  
+  Menguji respons server terhadap permintaan format konten yang invalid atau tidak didukung oleh spesifikasi API melalui pengaturan _header_ `Accept: text/plain`.
+
+  **Expected Result:**  
+  Server menolak permintaan (_content mismatch_) dan mengembalikan status `406 Not Acceptable`, atau mengabaikan _header_ tersebut dan melakukan _fallback_ ke format bawaan (JSON) dengan status `200 OK`.
 url: https://restful-booker.herokuapp.com/booking/1
 method: GET
 headers:

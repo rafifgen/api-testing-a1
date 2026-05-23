@@ -1,4 +1,11 @@
 $kind: http-request
+name: TC07
+description: |-
+  **Deskripsi:**  
+  Menguji apakah API berhasil mengembalikan detail data _booking_ secara lengkap dan akurat saat diberikan `bookingid` yang valid dan sudah terdaftar di server.
+
+  **Expected Result:**  
+  Status `200 OK` dengan _response body_ berformat JSON yang berisi detail pemesanan secara utuh.
 url: https://restful-booker.herokuapp.com/booking/1
 method: GET
 examples: .resources/TC07.resources/examples

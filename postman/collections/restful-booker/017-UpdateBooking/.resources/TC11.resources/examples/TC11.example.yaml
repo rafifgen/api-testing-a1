@@ -4,7 +4,7 @@ request:
   method: PUT
   body:
     type: json
-    content: "{ \r
+    content: "{\r
 
       \    \"lastname\" : \"Brown\",\r
 

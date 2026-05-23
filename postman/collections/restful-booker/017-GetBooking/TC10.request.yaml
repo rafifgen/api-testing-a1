@@ -1,5 +1,11 @@
 $kind: http-request
 name: TC10
+description: |-
+  **Deskripsi:**  
+  Pengujian standar (jalur positif/normal) untuk mengambil data _booking_ menggunakan ID yang valid tanpa manipulasi _header_ tambahan, guna memastikan operasional utama berjalan stabil.
+
+  **Expected Result:**  
+  Status `200 OK` dengan _response body_ berformat JSON.
 url: https://restful-booker.herokuapp.com/booking/1
 method: GET
 examples: .resources/TC10.resources/examples
