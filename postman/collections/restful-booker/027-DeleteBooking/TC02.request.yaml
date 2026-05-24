@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC02
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat request menggunakan `Cookie` yang berisi token valid hasil generate dari endpoint `CreateToken`.
+
+  ### Expected Result
+
+  Status `201 Created` dan record booking berhasil dihapus.
 url: https://restful-booker.herokuapp.com/booking/100
 method: DELETE
 headers:

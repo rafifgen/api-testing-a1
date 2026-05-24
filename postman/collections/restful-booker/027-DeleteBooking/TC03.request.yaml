@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC03
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat request menggunakan header `Authorization` dengan kredensial valid.
+
+  ### Expected Result
+
+  Status `201 Created` dan record booking berhasil dihapus.
 url: https://restful-booker.herokuapp.com/booking/1
 method: DELETE
 auth:

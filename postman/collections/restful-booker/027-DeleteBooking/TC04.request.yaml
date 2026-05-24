@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC04
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan penghapusan booking menggunakan ID yang valid dan tersedia di database.
+
+  ### Expected Result
+
+  Status `201 Created` dan record booking berhasil dihapus.
 url: https://restful-booker.herokuapp.com/booking/1
 method: DELETE
 auth:
