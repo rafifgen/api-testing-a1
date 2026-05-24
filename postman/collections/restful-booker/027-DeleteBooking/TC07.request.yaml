@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/
+method: DELETE
+auth:
+  type: basic
+  credentials:
+    password: password123
+    username: admin
+examples: .resources/TC07.resources/examples
+order: 1692062258566490

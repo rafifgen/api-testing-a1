@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/1
+method: DELETE
+auth:
+  type: noauth
+examples: .resources/TC01.resources/examples
+order: 1086

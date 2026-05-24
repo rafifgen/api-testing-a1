@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/satu
+method: DELETE
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC08.resources/examples
+order: 1695446265234654

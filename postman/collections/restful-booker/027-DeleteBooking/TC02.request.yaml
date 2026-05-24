@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking/100
+method: DELETE
+headers:
+  Cookie: token=a652c76e0072db2
+examples: .resources/TC02.resources/examples
+order: 1309
