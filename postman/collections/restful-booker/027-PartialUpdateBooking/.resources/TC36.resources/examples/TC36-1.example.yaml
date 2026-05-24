@@ -1,4 +1,5 @@
 $kind: http-example
+name: TC36
 request:
   url: https://restful-booker.herokuapp.com/booking/1
   method: PATCH
@@ -8,7 +9,7 @@ request:
 
       \    \"bookingdates\": {\r
 
-      \      \"checkin\": \"2019-13-01\"\r
+      \      \"checkin\": \"10000-12-01\"\r
 
       \    }\r
 
@@ -19,11 +20,11 @@ response:
   headers:
     content-length: "176"
     content-type: application/json; charset=utf-8
-    date: Sun, 24 May 2026 06:07:26 GMT
-    etag: W/"b0-41VkdW1/ZXrZaXC1uzhFGZ4jGBc"
+    date: Sun, 24 May 2026 06:07:59 GMT
+    etag: W/"b0-+PsO+OC1lkvZEN9Vhlygi1gf2Jg"
     nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
-    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jYCAYEXKdrASXsiIHQQ4C6%2BUFX2gnqwn4504iR9okVA%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779602846"}],"max_age":3600}'
-    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=jYCAYEXKdrASXsiIHQQ4C6%2BUFX2gnqwn4504iR9okVA%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779602846"
+    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=W%2FcgagcbkUdn5Bciz6rsfRflZ7L7Ll5w2y7D8AdGJ1c%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779602879"}],"max_age":3600}'
+    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=W%2FcgagcbkUdn5Bciz6rsfRflZ7L7Ll5w2y7D8AdGJ1c%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779602879"
     server: Heroku
     via: 1.1 heroku-router
     x-powered-by: Express
@@ -36,9 +37,9 @@ response:
         "totalprice": 111,
         "depositpaid": true,
         "bookingdates": {
-          "checkin": "0NaN-aN-aN",
+          "checkin": "0000-12-01",
           "checkout": "0NaN-aN-aN"
         },
         "additionalneeds": "Breakfast"
       }
-order: 1779602849035
+order: 553619643455471

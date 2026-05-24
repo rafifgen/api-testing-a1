@@ -1,5 +1,4 @@
 $kind: http-request
-name: TC38
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:
