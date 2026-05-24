@@ -7,7 +7,7 @@ description: |-
 
   ### Expected Result
 
-  Status `405 Method Not Allowed`.
+  Status `400 Bad Request`.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:
