@@ -1,0 +1,28 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"John\",\r
+
+    \    \"lastname\" : \"Doe\",\r
+
+    \    \"totalprice\" : 100000,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2026-05-16\",\r
+
+    \        \"checkout\" : \"2026-05-17\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Please ship ASAP\"\r
+
+    }"
+examples: .resources/TC6.resources/examples
+order: 4425264487096755

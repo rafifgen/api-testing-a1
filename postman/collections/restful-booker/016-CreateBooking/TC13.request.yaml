@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking
+method: POST
+body:
+  type: json
+  content: "{\r\n}"
+examples: .resources/TC13.resources/examples
+order: 4501951750088293
