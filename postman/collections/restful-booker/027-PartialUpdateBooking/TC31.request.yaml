@@ -1,5 +1,13 @@
 $kind: http-request
 name: TC31
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat tanggal `checkout` lebih awal dibandingkan tanggal `checkin`.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:

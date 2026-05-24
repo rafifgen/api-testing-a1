@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC04
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan update booking menggunakan ID yang valid dan tersedia di database.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
 url: https://restful-booker.herokuapp.com/booking/2
 method: PATCH
 body:

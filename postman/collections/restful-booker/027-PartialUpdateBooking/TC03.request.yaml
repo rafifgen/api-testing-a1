@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC03
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat request menggunakan header `Authorization` dengan kredensial valid.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
 url: https://restful-booker.herokuapp.com/booking/2
 method: PATCH
 body:

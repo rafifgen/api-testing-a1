@@ -1,5 +1,13 @@
 $kind: http-request
 name: TC30
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `depositpaid` diisi menggunakan nilai selain boolean `true` atau `false`.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:

@@ -1,5 +1,13 @@
 $kind: http-request
 name: TC16
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `totalprice` diisi menggunakan angka positif.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:

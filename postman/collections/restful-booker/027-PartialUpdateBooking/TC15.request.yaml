@@ -1,5 +1,13 @@
 $kind: http-request
 name: TC15
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `firstname` dan `lastname` diisi menggunakan angka atau karakter simbol.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:

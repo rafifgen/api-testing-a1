@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC24
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `additionalneeds` diisi menggunakan sebuah kalimat.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:

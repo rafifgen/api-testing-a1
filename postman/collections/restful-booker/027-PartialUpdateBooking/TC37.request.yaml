@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC37
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `checkout` diisi menggunakan nilai tahun melebihi batas valid datetime.
+
+  ### Expected Result
+
+  Status `405 Method Not Allowed`.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:
@@ -18,4 +27,4 @@ auth:
     username: admin
     password: password123
 examples: .resources/TC37.resources/examples
-order: 4503598504203560
+order: 4503599623304137

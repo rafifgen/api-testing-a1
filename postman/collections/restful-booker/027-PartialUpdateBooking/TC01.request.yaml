@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC01
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `PATCH /booking/:id` tanpa menyertakan autentikasi berupa `Cookie` maupun `Authorization`.
+
+  ### Expected Result
+
+  Status `403 Forbidden`.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:

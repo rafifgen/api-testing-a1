@@ -1,5 +1,13 @@
 $kind: http-request
 name: TC13
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat request body dikirim dalam kondisi kosong.
+
+  ### Expected Result
+
+  Status `200 OK` dan tidak ada perubahan data booking.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PATCH
 body:
