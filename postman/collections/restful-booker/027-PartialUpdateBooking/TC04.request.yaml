@@ -1,0 +1,26 @@
+$kind: http-request
+name: TC04
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan update booking menggunakan ID yang valid dan tersedia di database.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
+url: https://restful-booker.herokuapp.com/booking/2
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"totalprice\" : 4000000\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC04.resources/examples
+order: 4000

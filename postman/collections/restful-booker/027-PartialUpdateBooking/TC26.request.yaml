@@ -1,0 +1,22 @@
+$kind: http-request
+name: TC26
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat endpoint dipanggil tanpa mengisikan parameter ID booking.
+
+  ### Expected Result
+
+  Status `404 Not Found`.
+url: https://restful-booker.herokuapp.com/booking
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"lastname\": \"Bar\"\r\n}"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC26.resources/examples
+order: 26671

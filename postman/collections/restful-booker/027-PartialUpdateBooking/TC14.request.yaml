@@ -1,0 +1,28 @@
+$kind: http-request
+name: TC14
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `firstname` dan `lastname` diisi menggunakan karakter huruf yang valid.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\": \"Foo\",\r
+
+    \    \"lastname\": \"Bar\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC14.resources/examples
+order: 15000

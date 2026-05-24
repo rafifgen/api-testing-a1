@@ -1,0 +1,22 @@
+$kind: http-request
+name: TC18
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `depositpaid` diisi dengan nilai boolean `true`.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"depositpaid\": true\r\n}"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC18.resources/examples
+order: 18000

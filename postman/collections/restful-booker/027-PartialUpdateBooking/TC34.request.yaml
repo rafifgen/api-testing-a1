@@ -1,0 +1,30 @@
+$kind: http-request
+name: TC34
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `checkin` diisi menggunakan nilai bulan melebihi batas valid datetime.
+
+  ### Expected Result
+
+  Status `405 Method Not Allowed`.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"bookingdates\": {\r
+
+    \      \"checkin\": \"2019-13-01\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC34.resources/examples
+order: 4503599621830242

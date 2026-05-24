@@ -1,0 +1,30 @@
+$kind: http-request
+name: TC23
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `checkout` diisi menggunakan tanggal maksimum yang valid.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"bookingdates\": {\r
+
+    \      \"checkout\": \"9999-12-31\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC23.resources/examples
+order: 24000

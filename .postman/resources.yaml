@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 localResources:
   collections:
     - ../postman/collections/restful-booker
@@ -8,3 +9,6 @@ cloudResources:
     ../postman/collections/restful-booker: 50116833-1f1465cc-2b30-4300-8590-988982097859
   environments:
     ../postman/environments/Rafif.environment.yaml: 50116833-709914f5-f679-415b-a7de-a284f19acc5e
+=======
+# Use this workspace to collaborate
+>>>>>>> 916428f806b1b93a01361883fb4425fe5e783e16

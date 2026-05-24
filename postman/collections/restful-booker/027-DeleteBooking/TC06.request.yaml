@@ -1,0 +1,16 @@
+$kind: http-request
+name: TC06
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat request menggunakan `Cookie` dengan token yang tidak valid.
+
+  ### Expected Result
+
+  Status `403 Forbidden`.
+url: https://restful-booker.herokuapp.com/booking/1
+method: DELETE
+headers:
+  Cookie: token=satu
+examples: .resources/TC06.resources/examples
+order: 1687416239375131
