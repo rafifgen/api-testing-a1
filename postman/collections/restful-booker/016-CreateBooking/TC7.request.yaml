@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC7
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi `depositpaid` bernilai `false`.
+
+  ### Expected Result
+
+  Status `200 OK`.
 url: https://restful-booker.herokuapp.com/booking
 method: POST
 body:

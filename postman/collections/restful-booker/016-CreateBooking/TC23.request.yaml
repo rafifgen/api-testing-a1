@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC23
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi hari di tanggal `checkout` dan`checkin` lebih besar dari 31.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
 url: https://restful-booker.herokuapp.com/booking
 method: POST
 body:

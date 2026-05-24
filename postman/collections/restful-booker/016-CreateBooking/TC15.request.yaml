@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC15
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi `totalprice` diisi oleh nilai terkecil signed BIGINT.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
 url: https://restful-booker.herokuapp.com/booking
 method: POST
 body:

@@ -1,5 +1,13 @@
 $kind: http-request
 name: TC9
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi tanggal `checkin` dan `checkout` diisi oleh nilai terbesar DATETIME.
+
+  ### Expected Result
+
+  Status `200 OK`.
 url: https://restful-booker.herokuapp.com/booking
 method: POST
 body:

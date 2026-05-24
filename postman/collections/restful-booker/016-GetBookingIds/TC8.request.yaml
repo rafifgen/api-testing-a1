@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC8
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `GET /booking/:id` dengan kondisi tanggal `checkin` berada pada records.
+
+  ### Expected Result
+
+  Status `200 OK`.
 url: https://restful-booker.herokuapp.com/booking?checkin=2026-05-16
 method: GET
 queryParams:

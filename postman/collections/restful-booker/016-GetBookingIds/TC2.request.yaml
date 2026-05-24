@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC2
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `GET /booking/:id` dengan kondisi `firstname` berada pada records.
+
+  ### Expected Result
+
+  Status `200 OK`.
 url: https://restful-booker.herokuapp.com/booking?firstname=John
 method: GET
 queryParams:

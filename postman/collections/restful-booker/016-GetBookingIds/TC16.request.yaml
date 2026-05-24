@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC16
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `GET /booking/:id` dengan kondisi tanggal `checkout`tidak sesuai format.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
 url: https://restful-booker.herokuapp.com/booking?checkout=17/05/2026
 method: GET
 queryParams:

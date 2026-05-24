@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC2
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi `firstname` dan `lastname` berisi nama terpanjang di dunia..
+
+  ### Expected Result
+
+  Status `200 OK`.
 url: https://restful-booker.herokuapp.com/booking
 method: POST
 body:

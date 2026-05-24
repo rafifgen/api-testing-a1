@@ -1,5 +1,17 @@
 $kind: http-request
 name: TC11
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi `additionalneeds` diisi oleh jumlah VARCHAR terbesar.
+
+  ### Expected Result
+
+  Status `200 OK`.
+
+  ### Note
+
+  Test ini tidak bisa dijalankan karena banyaknya line VARCHAR yang perlu dikonfigurasikan lagi.
 url: https://restful-booker.herokuapp.com/booking
 method: POST
 body:
