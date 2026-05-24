@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC06
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan ID booking  
+  yang bukan angka (`abc`) pada parameter URL, menggunakan autentikasi _Basic Auth_ yang valid.
+
+  **Expected Result:**  
+  Status `405 Method Not Allowed` — server menolak permintaan karena format ID tidak valid,  
+  dan data booking tidak berubah di _database_.
 url: https://restful-booker.herokuapp.com/booking/abc
 method: PUT
 body:

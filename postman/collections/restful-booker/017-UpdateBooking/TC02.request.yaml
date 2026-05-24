@@ -1,4 +1,12 @@
 $kind: http-request
+name: TC02
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan menyertakan  
+  header Cookie berisi token yang tidak valid/salah (`tokenSalah`).
+
+  **Expected Result:**  
+  Status `403 Forbidden` — server menolak permintaan karena token autentikasi tidak dikenali.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PUT
 headers:

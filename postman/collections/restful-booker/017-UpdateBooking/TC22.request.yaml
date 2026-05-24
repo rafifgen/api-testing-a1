@@ -1,4 +1,14 @@
 $kind: http-request
+name: TC22
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan nilai `depositpaid`  
+  diisi string teks (`"yes"`) alih-alih tipe data boolean, menggunakan autentikasi _Basic Auth_  
+  yang valid.
+
+  **Expected Result:**  
+  Status `400 Bad Request` — server menolak permintaan karena tipe data `depositpaid` tidak valid,  
+  disertai pesan error validasi, dan data booking tidak berubah di _database_.
 url: |
   https://restful-booker.herokuapp.com/booking/2
 method: PUT

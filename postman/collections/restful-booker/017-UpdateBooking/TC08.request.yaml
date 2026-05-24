@@ -1,4 +1,14 @@
 $kind: http-request
+name: TC08
+description: |-
+  **Deskripsi:**  
+  Menguji keberhasilan pembaruan data booking (`PUT`) dengan nilai `depositpaid` diisi `false`,  
+  menggunakan autentikasi _Basic Auth_ yang valid. ID booking yang digunakan (`2`) diasumsikan  
+  ada di dalam _database_.
+
+  **Expected Result:**  
+  Status `200 OK` — server berhasil memperbarui data booking, response body berisi JSON data  
+  booking yang telah diperbarui, dan perubahan tersimpan di _database_.
 url: https://restful-booker.herokuapp.com/booking/2
 method: PUT
 body:

@@ -1,4 +1,12 @@
 $kind: http-request
+name: TC01
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) tanpa menyertakan  
+  header autentikasi apapun (tanpa token Cookie maupun Basic Auth).
+
+  **Expected Result:**  
+  Status `403 Forbidden` — server menolak permintaan karena tidak ada kredensial yang diberikan.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PUT
 body:

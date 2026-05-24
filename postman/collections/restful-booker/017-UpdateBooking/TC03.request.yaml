@@ -1,4 +1,14 @@
 $kind: http-request
+name: TC03
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan menyertakan  
+  header Cookie berisi token autentikasi yang valid. ID booking yang digunakan (`1`)  
+  diasumsikan ada di dalam _database_.
+
+  **Expected Result:**  
+  Status `200 OK` — server berhasil memperbarui data booking dan mengembalikan objek booking  
+  yang telah diperbarui.
 url: https://restful-booker.herokuapp.com/booking/1
 method: PUT
 headers:

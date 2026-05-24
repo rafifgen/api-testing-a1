@@ -1,4 +1,13 @@
 $kind: http-request
+name: TC27
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan field `totalprice`  
+  diisi string kosong (`""`), menggunakan autentikasi _Basic Auth_ yang valid.
+
+  **Expected Result:**  
+  Status `400 Bad Request` — server menolak permintaan karena nilai `totalprice` tidak boleh kosong  
+  dan harus bertipe angka, disertai pesan error validasi, dan data booking tidak berubah di _database_.
 url: https://restful-booker.herokuapp.com/booking/2
 method: PUT
 body:
