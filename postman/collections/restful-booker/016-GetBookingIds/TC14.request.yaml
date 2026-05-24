@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking?checkin=2026-05-18&checkout=2026-05-17
+method: GET
+queryParams:
+  checkin: 2026-05-18
+  checkout: 2026-05-17
+examples: .resources/TC14.resources/examples
+order: 4060656409756907

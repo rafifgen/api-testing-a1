@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://restful-booker.herokuapp.com/booking?firstname=John
+method: GET
+queryParams:
+  firstname: John
+examples: .resources/TC2.resources/examples
+order: 2000
