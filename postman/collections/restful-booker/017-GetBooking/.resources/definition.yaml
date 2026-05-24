@@ -1,7 +1,7 @@
 $kind: collection
 name: 017-GetBooking
 description: |-
-  ### **Deskripsi Modul**
+  **Deskripsi Modul**
 
   Modul ini berisi rangkaian pengujian untuk _endpoint_ `GET /booking/:id`. _Endpoint_ ini berfungsi untuk mengambil detail informasi pemesanan (seperti nama, harga, status deposit, dan tanggal _check-in_/_check-out_) berdasarkan ID pemesanan yang valid.
 
@@ -9,7 +9,7 @@ description: |-
 
   ---
 
-  ### Prasyarat Pengujian (Pre-Conditions)
+  **Prasyarat Pengujian (Pre-Conditions)**
 
   Beberapa skenario positif membutuhkan data _booking_ yang sudah dipastikan ada di _database_. Eksekutor harus menjalankan _request_ prasyarat (seperti `Pre-TC04`, `Pre-TC05`, dst.) terlebih dahulu. Respons dari _request_ tersebut akan menghasilkan `bookingid` baru, yang kemudian disalin ke dalam parameter URL pada _test case_ utama.
 order: 1664896019178964

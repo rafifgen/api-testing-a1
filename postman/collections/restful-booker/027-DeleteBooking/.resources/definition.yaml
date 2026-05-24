@@ -1,13 +1,13 @@
 $kind: collection
 name: 027-DeleteBooking
 description: |-
-  ## Deskripsi Modul
+  **Deskripsi Modul**
 
   Modul ini berisi rangkaian pengujian untuk endpoint `DELETE /booking/:id`. Endpoint ini berfungsi untuk menghapus data booking berdasarkan ID booking yang valid.
 
   Pengujian pada modul ini difokuskan pada validasi autentikasi menggunakan `Cookie` maupun `Authorization`, validasi ID booking, serta penanganan error ketika request dilakukan tanpa autentikasi atau menggunakan format ID yang tidak valid.
 
-  ## Prasyarat Pengujian (Pre-Conditions)
+  **Prasyarat Pengujian (Pre-Conditions)**
 
   Beberapa skenario positif membutuhkan data booking yang sudah dipastikan ada di database. Eksekutor harus menjalankan request prasyarat (seperti Create Booking atau request persiapan lainnya) terlebih dahulu. Respons dari request tersebut akan menghasilkan `bookingid` baru, yang kemudian disalin ke dalam parameter URL pada test case utama.
 

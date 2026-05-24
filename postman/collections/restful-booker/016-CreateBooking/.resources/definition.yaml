@@ -1,3 +1,6 @@
 $kind: collection
 name: 016-CreateBooking
+description: |-
+  **Deskripsi Modul**  
+  Modul ini berisi rangkaian pengujian untuk endpoint `POST /booking`. Endpoint ini berfungsi untuk membuat sebuah booking. Pengujian pada modul ini difokuskan pada validasi input dari setiap field dan penanganan eror jika value yang di-inputkan tidak sesuai dengan semestinya. Modul ini merupakan pre-condition dari modul-modul lain yang ada karena modul yang lain membutuhkan id yang didapatkan dari CreateBooking.
 order: 2792332252413951

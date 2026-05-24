@@ -1,13 +1,13 @@
 $kind: collection
 name: 027-PartialUpdateBooking
 description: |-
-  ## Deskripsi Modul
+  **Deskripsi Modul**
 
   Modul ini berisi rangkaian pengujian untuk endpoint `PATCH /booking/:id`. Endpoint ini berfungsi untuk memperbarui sebagian data pemesanan (partial update) berdasarkan ID booking yang valid tanpa perlu mengirim seluruh data booking.
 
   Pengujian pada modul ini difokuskan pada validasi autentikasi menggunakan `Cookie` maupun `Authorization`, validasi ID booking, validasi field request body, pengujian tipe data, validasi format tanggal, serta penanganan error ketika data yang dikirim tidak sesuai dengan aturan sistem.
 
-  ## Prasyarat Pengujian (Pre-Conditions)
+  **Prasyarat Pengujian (Pre-Conditions)**
 
   Beberapa skenario positif membutuhkan data booking yang sudah dipastikan ada di database. Eksekutor harus menjalankan request prasyarat (seperti Create Booking atau request persiapan lainnya) terlebih dahulu. Respons dari request tersebut akan menghasilkan `bookingid` baru, yang kemudian disalin ke dalam parameter URL pada test case utama. Selain itu, beberapa skenario autentikasi membutuhkan token yang valid dari endpoint `CreateToken` untuk digunakan pada header `Cookie` atau `Authorization`.
 order: 1109557148385279

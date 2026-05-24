@@ -1,3 +1,10 @@
 $kind: collection
 name: 016-GetBookingIds
+description: |-
+  **Deskripsi Modul**  
+  Modul ini berisi rangkaian pengujian untuk endpoint GET /booking/:id. Endpoint ini berfungsi untuk mengambil ID booking yang telah ada berdasarkan filter firstname, lastname, checkin, dan checkout.  
+  Pengujian pada modul ini difokuskan pada masing-masing value dari firstname, lastname, checkin, dan checkout. Mulai dari validasi tiap value jika value tersebut ada dan tidak ada, hingga valid tidaknya value tersebut.
+
+  **Prasyarat Pengujian (Pre-Conditions)**  
+  Seluruh skenario membutuhkan data booking yang sudah dipastikan ada di database. Eksekutor harus menjalankan request API pada endpoint CreateBooking terlebih dahulu. Respons dari request tersebut akan menghasilkan bookingid baru, yang kemudian disalin ke dalam parameter URL pada test case utama.
 order: 3178489122390015

@@ -1,7 +1,7 @@
 $kind: collection
 name: 017-UpdateBooking
 description: |-
-  ## Deskripsi Modul
+  **Deskripsi Modul**
 
   Modul ini berisi rangkaian pengujian untuk _endpoint_ `PUT /booking/:id`. _Endpoint_ ini berfungsi untuk memperbarui (**update keseluruhan**) data pemesanan yang sudah ada di _database_.
 
@@ -9,7 +9,7 @@ description: |-
 
   ---
 
-  ### Prasyarat Pengujian (Pre-Conditions)
+  **Prasyarat Pengujian (Pre-Conditions)**
 
   1. **Otorisasi:** _Endpoint_ ini dilindungi. Eksekutor harus menjalankan _request_ `CreateToken` terlebih dahulu untuk mendapatkan token otorisasi yang valid, lalu memasukkannya ke dalam _header_ `Cookie: token={{token}}` atau menggunakan kredensial _Basic Auth_ (`admin` / `password123`).
       

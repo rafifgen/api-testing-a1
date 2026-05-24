@@ -1,5 +1,10 @@
 $kind: http-request
 name: createToken
+description: |-
+  **Deskripsi:**  
+  Request pembantu (_utility_) untuk mendapatkan token autentikasi dari server.  
+  Token yang dikembalikan pada field `token` di response body digunakan sebagai  
+  nilai Cookie pada test case yang memerlukan autentikasi berbasis token (contoh: TC03).
 url: https://restful-booker.herokuapp.com/auth
 method: POST
 body:
