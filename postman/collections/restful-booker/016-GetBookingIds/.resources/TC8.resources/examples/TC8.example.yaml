@@ -1,0 +1,38 @@
+$kind: http-example
+request:
+  url: https://restful-booker.herokuapp.com/booking?checkin=2026-05-16
+  method: GET
+  queryParams:
+    checkin: 2026-05-16
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-length: "71"
+    content-type: application/json; charset=utf-8
+    date: Sun, 24 May 2026 13:13:32 GMT
+    etag: W/"47-ExeerO8XgBeevxO4r8JC8wX6DbM"
+    nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=kYwNkK5uLJPdxCc34pMvpc8htslDA7jqMsGrQwWsiFc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779628412"}],"max_age":3600}'
+    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=kYwNkK5uLJPdxCc34pMvpc8htslDA7jqMsGrQwWsiFc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779628412"
+    server: Heroku
+    via: 1.1 heroku-router
+    x-powered-by: Express
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "bookingid": 15
+        },
+        {
+          "bookingid": 29
+        },
+        {
+          "bookingid": 310
+        },
+        {
+          "bookingid": 732
+        }
+      ]
+order: 1779628425946

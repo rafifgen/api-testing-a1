@@ -1,0 +1,37 @@
+$kind: http-request
+name: TC20
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan format tanggal `checkout` dan`checkin` tidak sesuai.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
+url: https://restful-booker.herokuapp.com/booking
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"John\",\r
+
+    \    \"lastname\" : \"Doe\",\r
+
+    \    \"totalprice\" : 10000,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"16/02/2026\",\r
+
+    \        \"checkout\" : \"17/05/2026\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Please ship ASAP\"\r
+
+    }"
+examples: .resources/TC20.resources/examples
+order: 4503574434714329

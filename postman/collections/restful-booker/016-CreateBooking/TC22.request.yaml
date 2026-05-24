@@ -1,0 +1,37 @@
+$kind: http-request
+name: TC22
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi bulan di tanggal `checkout` dan`checkin` lebih besar dari 13
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
+url: https://restful-booker.herokuapp.com/booking
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"John\",\r
+
+    \    \"lastname\" : \"Doe\",\r
+
+    \    \"totalprice\" : 10000,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2026-13-01\",\r
+
+    \        \"checkout\" : \"2026-13-01\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Please ship ASAP\"\r
+
+    }"
+examples: .resources/TC22.resources/examples
+order: 4503594877547956

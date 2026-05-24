@@ -1,0 +1,14 @@
+$kind: http-request
+name: TC1
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `GET /booking/:id` dengan kondisi tanpa id.
+
+  ### Expected Result
+
+  Status `200 OK`.
+url: https://restful-booker.herokuapp.com/booking
+method: GET
+examples: .resources/TC1.resources/examples
+order: 1000

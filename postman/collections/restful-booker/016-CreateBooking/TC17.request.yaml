@@ -1,0 +1,37 @@
+$kind: http-request
+name: TC17
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi `depositpaid` berisi kumpulan karakter.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
+url: https://restful-booker.herokuapp.com/booking
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"John\",\r
+
+    \    \"lastname\" : \"Doe\",\r
+
+    \    \"totalprice\" : 10000,\r
+
+    \    \"depositpaid\" : \"Benar\",\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2026-05-16\",\r
+
+    \        \"checkout\" : \"2026-05-17\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Please ship ASAP\"\r
+
+    }"
+examples: .resources/TC17.resources/examples
+order: 4503413749601387

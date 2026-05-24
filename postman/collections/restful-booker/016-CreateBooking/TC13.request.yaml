@@ -1,0 +1,17 @@
+$kind: http-request
+name: TC13
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi seluruh field-nya kosong/tidak diisi
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
+url: https://restful-booker.herokuapp.com/booking
+method: POST
+body:
+  type: json
+  content: "{\r\n}"
+examples: .resources/TC13.resources/examples
+order: 4501951750088293

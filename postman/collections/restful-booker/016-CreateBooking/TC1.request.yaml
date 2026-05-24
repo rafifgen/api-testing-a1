@@ -1,0 +1,37 @@
+$kind: http-request
+name: TC1
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan request `POST /booking` dengan kondisi `firstname` dan `lastname` berisi nama dengan jumlah karakter rata-rata (13-14 karakter)
+
+  ### Expected Result
+
+  Status `200 OK`.
+url: https://restful-booker.herokuapp.com/booking
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"John\",\r
+
+    \    \"lastname\" : \"Doe\",\r
+
+    \    \"totalprice\" : 10000,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2026-05-16\",\r
+
+    \        \"checkout\" : \"2026-05-17\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Please ship ASAP\"\r
+
+    }"
+examples: .resources/TC1.resources/examples
+order: 1779581029105

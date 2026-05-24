@@ -1,0 +1,59 @@
+$kind: http-example
+request:
+  url: https://restful-booker.herokuapp.com/booking
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \    \"firstname\" : \"John\",\r
+
+      \    \"lastname\" : \"Doe\",\r
+
+      \    \"totalprice\" : 10000,\r
+
+      \    \"depositpaid\" : true,\r
+
+      \    \"bookingdates\" : {\r
+
+      \        \"checkin\" : \"16/02/2026\",\r
+
+      \        \"checkout\" : \"17/05/2026\"\r
+
+      \    },\r
+
+      \    \"additionalneeds\" : \"Please ship ASAP\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-length: "205"
+    content-type: application/json; charset=utf-8
+    date: Sun, 24 May 2026 00:28:47 GMT
+    etag: W/"cd-YUL891oDyO7b0rbuRY41/WnrDK0"
+    nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=aCZYTwAorZykYFXmOQ3rB1Ka%2BDxJdIhiFc6fQV5IS%2F8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779582527"}],"max_age":3600}'
+    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=aCZYTwAorZykYFXmOQ3rB1Ka%2BDxJdIhiFc6fQV5IS%2F8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779582527"
+    server: Heroku
+    via: 1.1 heroku-router
+    x-powered-by: Express
+  body:
+    type: json
+    content: |-
+      {
+        "bookingid": 4127,
+        "booking": {
+          "firstname": "John",
+          "lastname": "Doe",
+          "totalprice": 10000,
+          "depositpaid": true,
+          "bookingdates": {
+            "checkin": "0NaN-aN-aN",
+            "checkout": "0NaN-aN-aN"
+          },
+          "additionalneeds": "Please ship ASAP"
+        }
+      }
+order: 1779582539392

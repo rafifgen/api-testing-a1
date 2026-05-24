@@ -1,0 +1,17 @@
+$kind: http-request
+name: TC7
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `GET /booking/:id` dengan kondisi `firstname` dan `lastname` tidak berada pada records.
+
+  ### Expected Result
+
+  Status `200 OK`. Return `JSON` konsing
+url: https://restful-booker.herokuapp.com/booking?firstname=Jane&lastname=Evans
+method: GET
+queryParams:
+  firstname: Jane
+  lastname: Evans
+examples: .resources/TC7.resources/examples
+order: 7000

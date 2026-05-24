@@ -1,0 +1,16 @@
+$kind: http-request
+name: TC11
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `GET /booking/:id` dengan kondisi tanggal `checkin` tidak berada pada records.
+
+  ### Expected Result
+
+  Status `200 OK`.
+url: https://restful-booker.herokuapp.com/booking?checkout=1998-05-18
+method: GET
+queryParams:
+  checkout: 1998-05-18
+examples: .resources/TC11.resources/examples
+order: 13000

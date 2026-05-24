@@ -1,0 +1,16 @@
+$kind: http-request
+name: TC3
+description: |-
+  Deskripsi
+
+  Menguji respons server saat melakukan request `GET /booking/:id` dengan kondisi `lastname` berada pada records.
+
+  ### Expected Result
+
+  Status `200 OK`.
+url: https://restful-booker.herokuapp.com/booking?lastname=Doe
+method: GET
+queryParams:
+  lastname: Doe
+examples: .resources/TC3.resources/examples
+order: 3000
