@@ -1,0 +1,19 @@
+$kind: http-request
+name: TC24
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) tanpa menyertakan body  
+  request sama sekali (`none`), menggunakan autentikasi _Basic Auth_ yang valid.
+
+  **Expected Result:**  
+  Status `400 Bad Request` — server menolak permintaan karena tidak ada data yang dikirim,  
+  disertai pesan error validasi, dan data booking tidak berubah di _database_.
+url: https://restful-booker.herokuapp.com/booking/2
+method: PUT
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC24.resources/examples
+order: 4503481183692280

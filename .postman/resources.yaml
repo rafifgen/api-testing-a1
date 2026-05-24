@@ -1,9 +1,14 @@
+<<<<<<< HEAD
+localResources:
+  collections:
+    - ../postman/collections/restful-booker
+  environments:
+    - ../postman/environments/Rafif.environment.yaml
+cloudResources:
+  collections:
+    ../postman/collections/restful-booker: 50116833-1f1465cc-2b30-4300-8590-988982097859
+  environments:
+    ../postman/environments/Rafif.environment.yaml: 50116833-709914f5-f679-415b-a7de-a284f19acc5e
+=======
 # Use this workspace to collaborate
-workspace:
-  id: 39053755-afe8-4769-8c82-fd0c492b3ebf
-
-# All resources in the `postman/` folder are automatically registered in Local View.
-# Point to additional files outside the `postman/` folder to register them individually. Example:
-#localResources:
-#  collections:
-#    - ../tests/E2E Test Collection/
+>>>>>>> 916428f806b1b93a01361883fb4425fe5e783e16

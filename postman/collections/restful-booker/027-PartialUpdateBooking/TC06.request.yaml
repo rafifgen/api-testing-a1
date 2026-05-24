@@ -1,0 +1,42 @@
+$kind: http-request
+name: TC06
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat seluruh field request body diisi lengkap dengan format dan tipe data valid.
+
+  ### Expected Result
+
+  Status `200 OK` dan seluruh data booking berhasil diperbarui.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\": \"John\",\r
+
+    \    \"lastname\": \"Doe\",\r
+
+    \    \"totalprice\": 1000000,\r
+
+    \    \"depositpaid\": true,\r
+
+    \    \"bookingdates\": {\r
+
+    \      \"checkin\": \"2018-01-01\",\r
+
+    \      \"checkout\": \"2019-01-01\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\": \"Breakfast\"\r
+
+    \  }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC06.resources/examples
+order: 8000

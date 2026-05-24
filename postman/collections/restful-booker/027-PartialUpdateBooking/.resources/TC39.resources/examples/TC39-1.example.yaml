@@ -1,0 +1,45 @@
+$kind: http-example
+name: TC39
+request:
+  url: https://restful-booker.herokuapp.com/booking/2
+  method: PATCH
+  body:
+    type: json
+    content: "{\r
+
+      \    \"bookingdates\": {\r
+
+      \      \"checkout\": \"2020-12-32\"\r
+
+      \    }\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-length: "170"
+    content-type: application/json; charset=utf-8
+    date: Sun, 24 May 2026 06:30:55 GMT
+    etag: W/"aa-RZx2t31nDyjj+5tjHvqiPLV2yQE"
+    nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=bQdtMU2xgW%2FMSgI17ZS7q5yYV80NKMFVY%2FAFzvxqKxI%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779604255"}],"max_age":3600}'
+    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=bQdtMU2xgW%2FMSgI17ZS7q5yYV80NKMFVY%2FAFzvxqKxI%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779604255"
+    server: Heroku
+    via: 1.1 heroku-router
+    x-powered-by: Express
+  body:
+    type: json
+    content: |-
+      {
+        "firstname": "Mary",
+        "lastname": "Brown",
+        "totalprice": 718,
+        "depositpaid": false,
+        "bookingdates": {
+          "checkin": "0NaN-aN-aN",
+          "checkout": "0NaN-aN-aN"
+        },
+        "additionalneeds": "Breakfast"
+      }
+order: 3788803013562467

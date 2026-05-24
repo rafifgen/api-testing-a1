@@ -1,0 +1,21 @@
+$kind: http-request
+name: TC25
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat request menggunakan `Cookie` dengan token yang tidak valid.
+
+  ### Expected Result
+
+  Status `403 Forbidden`.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+headers:
+  Cookie: token=123
+body:
+  type: json
+  content: "{\r\n    \"firstname\" : \"Foo\"\r\n}"
+auth:
+  type: noauth
+examples: .resources/TC25.resources/examples
+order: 27000

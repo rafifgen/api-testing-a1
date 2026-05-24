@@ -1,0 +1,10 @@
+$kind: http-request
+name: Pre-TC07
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+headers:
+  Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+body:
+  type: json
+  content: "{\r\n    \"depositpaid\": false\r\n}"
+order: 10000

@@ -1,7 +1,6 @@
 $kind: http-request
 name: getBooking
 description: This request is intended to request the booking apart from the test cases.
-url: |
-  https://restful-booker.herokuapp.com/auth
+url: https://restful-booker.herokuapp.com/booking/
 method: GET
 order: 3729516099195527

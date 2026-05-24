@@ -1,0 +1,12 @@
+$kind: http-request
+name: TC01
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat mencari ID dengan format angka yang valid, namun ID tersebut tidak ada di dalam _database_ (batas atas/pencarian ID fiktif).
+
+  **Expected Result:**  
+  Status `404 Not Found`.
+url: https://restful-booker.herokuapp.com/booking/99999
+method: GET
+examples: .resources/TC01.resources/examples
+order: 1000

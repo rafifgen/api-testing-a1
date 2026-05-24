@@ -1,0 +1,25 @@
+$kind: http-example
+request:
+  url: https://restful-booker.herokuapp.com/booking/satu
+  method: PATCH
+  body:
+    type: json
+    content: "{\r\n    \"lastname\": \"Doe\"\r\n}"
+response:
+  statusCode: 405
+  statusText: Method Not Allowed
+  headers:
+    content-length: "18"
+    content-type: text/plain; charset=utf-8
+    date: Sat, 23 May 2026 14:20:36 GMT
+    etag: W/"12-UGJMK66P4abaBlq0vKHJaCKuGCA"
+    nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=tUHNzzZXdg5xsLIJYWD8YIRQf5nwWJ5U%2F7jYZCbgEE4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779546036"}],"max_age":3600}'
+    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=tUHNzzZXdg5xsLIJYWD8YIRQf5nwWJ5U%2F7jYZCbgEE4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779546036"
+    server: Heroku
+    via: 1.1 heroku-router
+    x-powered-by: Express
+  body:
+    type: text
+    content: Method Not Allowed
+order: 1779546037906

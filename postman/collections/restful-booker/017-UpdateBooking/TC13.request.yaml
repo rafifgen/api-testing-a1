@@ -1,0 +1,38 @@
+$kind: http-request
+name: TC13
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan field `totalprice`  
+  tidak disertakan dalam body request, menggunakan autentikasi _Basic Auth_ yang valid.
+
+  **Expected Result:**  
+  Status `400 Bad Request` — server menolak permintaan karena field wajib `totalprice` tidak ada,  
+  disertai pesan error validasi, dan data booking tidak berubah di _database_.
+url: https://restful-booker.herokuapp.com/booking/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"James\",\r
+
+    \    \"lastname\" : \"Brown\",\r
+
+    \    \"depositpaid\" : false,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2018-01-01\",\r
+
+    \        \"checkout\" : \"2019-01-01\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC13.resources/examples
+order: 13000

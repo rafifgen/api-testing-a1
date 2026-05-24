@@ -1,0 +1,23 @@
+$kind: http-request
+name: TC23
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan body request  
+  dikirim sebagai objek JSON kosong (`{}`), tanpa satu pun field yang disertakan, menggunakan  
+  autentikasi _Basic Auth_ yang valid.
+
+  **Expected Result:**  
+  Status `400 Bad Request` — server menolak permintaan karena seluruh field wajib tidak ada,  
+  disertai pesan error validasi, dan data booking tidak berubah di _database_.
+url: https://restful-booker.herokuapp.com/booking/2
+method: PUT
+body:
+  type: json
+  content: "{}"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC23.resources/examples
+order: 4502647457667392

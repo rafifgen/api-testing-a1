@@ -1,0 +1,32 @@
+$kind: http-example
+request:
+  url: https://restful-booker.herokuapp.com/booking/3
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-length: "141"
+    content-type: application/json; charset=utf-8
+    date: Sat, 23 May 2026 04:48:51 GMT
+    etag: W/"8d-SWdr85ng4J9kiooqdqCAGphsy38"
+    nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=05TU78MJVJ%2B%2BPX1FrCcK2r3Zb7fD5KfNSPwchHCuqKg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779511731"}],"max_age":3600}'
+    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=05TU78MJVJ%2B%2BPX1FrCcK2r3Zb7fD5KfNSPwchHCuqKg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779511731"
+    server: Heroku
+    via: 1.1 heroku-router
+    x-powered-by: Express
+  body:
+    type: json
+    content: |-
+      {
+        "firstname": "Sally",
+        "lastname": "Wilson",
+        "totalprice": 971,
+        "depositpaid": true,
+        "bookingdates": {
+          "checkin": "2015-08-13",
+          "checkout": "2022-06-21"
+        }
+      }
+order: 1779511736224

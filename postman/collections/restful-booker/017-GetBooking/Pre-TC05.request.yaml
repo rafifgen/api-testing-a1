@@ -1,0 +1,28 @@
+$kind: http-request
+name: Pre-TC05
+url: https://restful-booker.herokuapp.com/booking/1
+method: PUT
+headers:
+  Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"James\",\r
+
+    \    \"lastname\" : \"Brown\",\r
+
+    \    \"totalprice\" : 111,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2018-01-01\",\r
+
+    \        \"checkout\" : \"2019-01-01\"\r
+
+    \    }\r
+
+    }"
+order: 4877

@@ -1,0 +1,40 @@
+$kind: http-request
+name: TC26
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan field `lastname`  
+  diisi string kosong (`""`), menggunakan autentikasi _Basic Auth_ yang valid.
+
+  **Expected Result:**  
+  Status `400 Bad Request` — server menolak permintaan karena nilai `lastname` tidak boleh kosong,  
+  disertai pesan error validasi, dan data booking tidak berubah di _database_.
+url: https://restful-booker.herokuapp.com/booking/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"James\",\r
+
+    \    \"lastname\" : \"\",\r
+
+    \    \"totalprice\" : 111,\r
+
+    \    \"depositpaid\" : false,\r
+
+    \    \"bookingdates\" : {\r
+
+    \    \"checkin\" : \"2018-01-01\",\r
+
+    \    \"checkout\" : \"2019-01-01\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC26.resources/examples
+order: 4503594073204992

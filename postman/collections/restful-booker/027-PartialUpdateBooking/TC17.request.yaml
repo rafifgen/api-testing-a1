@@ -1,0 +1,26 @@
+$kind: http-request
+name: TC17
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `totalprice` diisi menggunakan angka negatif.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"totalprice\": -20000000\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC17.resources/examples
+order: 17000

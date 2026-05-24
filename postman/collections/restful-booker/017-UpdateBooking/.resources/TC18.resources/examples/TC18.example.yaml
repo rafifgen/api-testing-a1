@@ -1,0 +1,54 @@
+$kind: http-example
+request:
+  url: https://restful-booker.herokuapp.com/booking/2
+  method: PUT
+  body:
+    type: json
+    content: "{\r
+
+      \    \"firstname\" : \"James\",\r
+
+      \    \"lastname\" : \"Brown\",\r
+
+      \    \"totalprice\" : 111,\r
+
+      \    \"depositpaid\" : false,\r
+
+      \    \"bookingdates\" : {\r
+
+      \        \"checkin\" : \"2018-01-01\",\r
+
+      \        \"checkout\" : \"2019/01/01\"\r
+
+      \    }\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-length: "171"
+    content-type: application/json; charset=utf-8
+    date: Sat, 23 May 2026 07:31:57 GMT
+    etag: W/"ab-YwgXiD8L/LNhjTghQ/UeNtUhkAA"
+    nel: '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}'
+    report-to: '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=B725Sh4RwLTxDIdonYQZVH3uD5DJkMuBb6wYd8bdIKs%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1779521517"}],"max_age":3600}'
+    reporting-endpoints: heroku-nel="https://nel.heroku.com/reports?s=B725Sh4RwLTxDIdonYQZVH3uD5DJkMuBb6wYd8bdIKs%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1779521517"
+    server: Heroku
+    via: 1.1 heroku-router
+    x-powered-by: Express
+  body:
+    type: json
+    content: |-
+      {
+        "firstname": "James",
+        "lastname": "Brown",
+        "totalprice": 111,
+        "depositpaid": false,
+        "bookingdates": {
+          "checkin": "2018-01-01",
+          "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+      }
+order: 1779521524686

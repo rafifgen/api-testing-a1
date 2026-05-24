@@ -1,0 +1,14 @@
+$kind: http-request
+name: TC08
+description: |-
+  **Deskripsi:**  
+  Menguji dukungan format representasi data (_Content Negotiation_) dengan meminta server mengembalikan respons dalam format XML melalui pengaturan _header_ `Accept: application/xml`.
+
+  **Expected Result:**  
+  Jika didukung, kembalikan status `200 OK` dengan _body_ XML. Jika format tidak didukung oleh API, server harus merespons dengan `406 Not Acceptable`.
+url: https://restful-booker.herokuapp.com/booking/1
+method: GET
+headers:
+  Accept: application/xml
+examples: .resources/TC08.resources/examples
+order: 11147

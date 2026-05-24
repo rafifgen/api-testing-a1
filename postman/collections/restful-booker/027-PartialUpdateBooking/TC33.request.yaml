@@ -1,0 +1,30 @@
+$kind: http-request
+name: TC33
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `checkout` diisi dengan format tanggal yang tidak valid.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"bookingdates\": {\r
+
+    \      \"checkout\": \"15-01-2019\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC33.resources/examples
+order: 4503597283311769

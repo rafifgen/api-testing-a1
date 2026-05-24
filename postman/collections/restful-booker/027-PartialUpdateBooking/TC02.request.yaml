@@ -1,0 +1,23 @@
+$kind: http-request
+name: TC02
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat request menggunakan `Cookie` yang berisi token valid hasil generate dari endpoint `CreateToken`.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui.
+url: https://restful-booker.herokuapp.com/booking/2
+method: PATCH
+headers:
+  Cookie: token=dde17d60d9a0517
+body:
+  type: json
+  content: "{\r
+
+    \    \"totalprice\" : 2000000\r
+
+    }"
+examples: .resources/TC02.resources/examples
+order: 2000

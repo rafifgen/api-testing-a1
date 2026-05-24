@@ -1,0 +1,12 @@
+$kind: http-request
+name: TC02
+description: |-
+  **Deskripsi:**  
+  Menguji validasi tipe data (metode _Equivalence Class Partitioning_) pada parameter URL dengan memasukkan teks/karakter khusus alih-alih angka (contoh format invalid).
+
+  **Expected Result:**  
+  Status `400 Bad Request` atau `404 Not Found`.
+url: https://restful-booker.herokuapp.com/booking/ABC#
+method: GET
+examples: .resources/TC02.resources/examples
+order: 2000

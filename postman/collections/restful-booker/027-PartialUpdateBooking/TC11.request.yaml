@@ -1,0 +1,34 @@
+$kind: http-request
+name: TC11
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat seluruh field body dikirim kecuali field `checkin` dan `checkout`.
+
+  ### Expected Result
+
+  Status `200 OK` dan data booking berhasil diperbarui sebagian.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\": \"John\",\r
+
+    \    \"lastname\": \"Doe\",\r
+
+    \    \"totalprice\": 1500000,\r
+
+    \    \"depositpaid\": false,\r
+
+    \    \"additionalneeds\": \"Breakfast\"\r
+
+    \  }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC11.resources/examples
+order: 12000

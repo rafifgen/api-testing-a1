@@ -1,0 +1,12 @@
+$kind: http-request
+name: TC03
+description: |-
+  **Deskripsi:**  
+  Menguji _endpoint_ ketika _client_ secara tidak sengaja menghapus parameter ID di akhir URL, sehingga _request_ hanya mengarah ke rute dasar `/booking/`.
+
+  **Expected Result:**  
+  URL akan dianggap sebagai _endpoint_ pencarian `GetBookingIds` dan mengembalikan daftar ID (Status `200 OK`), atau sistem menolak dan memberikan peringatan `405 Method Not Allowed`.
+url: https://restful-booker.herokuapp.com/booking/
+method: GET
+examples: .resources/TC03.resources/examples
+order: 3000

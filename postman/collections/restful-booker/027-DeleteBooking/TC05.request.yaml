@@ -1,0 +1,19 @@
+$kind: http-request
+name: TC05
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat melakukan penghapusan booking menggunakan ID dengan format angka valid namun tidak tersedia di database.
+
+  ### Expected Result
+
+  Status `405 Method Not Allowed`.
+url: https://restful-booker.herokuapp.com/booking/999999
+method: DELETE
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC05.resources/examples
+order: 1670953828689902

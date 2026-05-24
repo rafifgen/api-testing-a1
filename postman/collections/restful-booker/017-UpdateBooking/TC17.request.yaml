@@ -1,0 +1,41 @@
+$kind: http-request
+name: TC17
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan format tanggal  
+  `checkin` yang tidak sesuai (`31-01-2018` alih-alih `YYYY-MM-DD`), menggunakan autentikasi  
+  _Basic Auth_ yang valid.
+
+  **Expected Result:**  
+  Status `400 Bad Request` — server menolak permintaan karena format tanggal `checkin` tidak valid,  
+  disertai pesan error validasi, dan data booking tidak berubah di _database_.
+url: https://restful-booker.herokuapp.com/booking/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"James\",\r
+
+    \    \"lastname\" : \"Brown\",\r
+
+    \    \"totalprice\" : 111,\r
+
+    \    \"depositpaid\" : false,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"31-01-2018\",\r
+
+    \        \"checkout\" : \"2019-01-01\"\r
+
+    \    }\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC17.resources/examples
+order: 17000

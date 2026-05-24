@@ -1,0 +1,22 @@
+$kind: http-request
+name: TC27
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat parameter ID diisi menggunakan karakter selain angka.
+
+  ### Expected Result
+
+  Status `405 Method Not Allowed.`
+url: https://restful-booker.herokuapp.com/booking/satu
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"lastname\": \"Doe\"\r\n}"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC27.resources/examples
+order: 3960122109856953

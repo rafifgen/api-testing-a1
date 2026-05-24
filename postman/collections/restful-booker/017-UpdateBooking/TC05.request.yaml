@@ -1,0 +1,43 @@
+$kind: http-request
+name: TC05
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan autentikasi  
+  _Basic Auth_ yang valid, namun ID booking yang dituju (`99999`) tidak ada di dalam  
+  _database_ (batas atas/ID fiktif).
+
+  **Expected Result:**  
+  Status `404 Not Found` — server berhasil memverifikasi kredensial, tetapi menolak  
+  permintaan karena resource dengan ID tersebut tidak ditemukan.
+url: https://restful-booker.herokuapp.com/booking/99999
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"James\",\r
+
+    \    \"lastname\" : \"Brown\",\r
+
+    \    \"totalprice\" : 111,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2018-01-01\",\r
+
+    \        \"checkout\" : \"2019-01-01\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Breakfast\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC05.resources/examples
+order: 5000

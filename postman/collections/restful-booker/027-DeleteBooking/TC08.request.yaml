@@ -1,0 +1,19 @@
+$kind: http-request
+name: TC08
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat parameter ID diisi menggunakan karakter selain angka.
+
+  ### Expected Result
+
+  Status `405 Method Not Allowed`.
+url: https://restful-booker.herokuapp.com/booking/satu
+method: DELETE
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC08.resources/examples
+order: 1695446265234654

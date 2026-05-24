@@ -1,0 +1,22 @@
+$kind: http-request
+name: TC29
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat field `totalprice` diisi menggunakan karakter ASCII atau simbol khusus.
+
+  ### Expected Result
+
+  Status `400 Bad Request`.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"totalprice\" : Ö\r\n}"
+auth:
+  type: basic
+  credentials:
+    username: admin
+    password: password123
+examples: .resources/TC29.resources/examples
+order: 4498843932455975

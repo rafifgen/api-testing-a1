@@ -1,0 +1,19 @@
+$kind: http-request
+name: TC07
+description: |-
+  ### Deskripsi
+
+  Menguji respons server saat endpoint dipanggil tanpa mengisikan parameter ID booking.
+
+  ### Expected Result
+
+  Status `404 Not Found`.
+url: https://restful-booker.herokuapp.com/booking/
+method: DELETE
+auth:
+  type: basic
+  credentials:
+    password: password123
+    username: admin
+examples: .resources/TC07.resources/examples
+order: 1692062258566490

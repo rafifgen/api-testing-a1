@@ -1,0 +1,38 @@
+$kind: http-request
+name: TC02
+description: |-
+  **Deskripsi:**  
+  Menguji respons server saat melakukan pembaruan data booking (`PUT`) dengan menyertakan  
+  header Cookie berisi token yang tidak valid/salah (`tokenSalah`).
+
+  **Expected Result:**  
+  Status `403 Forbidden` — server menolak permintaan karena token autentikasi tidak dikenali.
+url: https://restful-booker.herokuapp.com/booking/1
+method: PUT
+headers:
+  Cookie: token=tokenSalah
+body:
+  type: json
+  content: "{\r
+
+    \    \"firstname\" : \"James\",\r
+
+    \    \"lastname\" : \"Brown\",\r
+
+    \    \"totalprice\" : 111,\r
+
+    \    \"depositpaid\" : true,\r
+
+    \    \"bookingdates\" : {\r
+
+    \        \"checkin\" : \"2018-01-01\",\r
+
+    \        \"checkout\" : \"2019-01-01\"\r
+
+    \    },\r
+
+    \    \"additionalneeds\" : \"Breakfast\"\r
+
+    }"
+examples: .resources/TC02.resources/examples
+order: 2000
